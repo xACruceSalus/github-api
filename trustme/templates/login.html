@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<div class="body"></div>
+  <title>Get your Github Repos</title>
+
+		<div class="header">
+			<div>Repo<span>Viewer</span></div>
+		</div>
+		<div class="login">
+				<a href="{{ url_for("users.github_login") }}">
+          <input type="button" value="Login With Github">
+        </a>
+		</div>
+
+  {% endblock %}
